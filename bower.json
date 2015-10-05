@@ -1,6 +1,6 @@
 {
   "name": "scalejs.popup",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "",
   "authors": [
   ],
@@ -9,7 +9,9 @@
     "dist/scalejs.popup.js"
   ],
   "ignore": [
-    "*", "!dist/*.js"
+    "*", 
+    "!dist/*.js",
+    "!dist/*.css"
   ],
   "dependencies": {
     "scalejs": "lisovin/scalejs",
