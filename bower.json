@@ -6,7 +6,7 @@
   ],
   "description": "",
   "main": [
-    "dist/scalejs.popup.min.js"
+    "dist/scalejs.popup.js"
   ],
   "ignore": [
     "*", "!dist/*.js"
