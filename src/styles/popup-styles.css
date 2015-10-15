@@ -85,7 +85,7 @@
       font-size: 20px;
   }
 
-  button {
+  .popup-box button {
     float: right;
     font-family: 'Gotham Medium', sans-serif;
     font-size: 11px;
@@ -94,14 +94,14 @@
     border: 0;
     outline: none;
   }
-  button.primary {
+  .popup-box button.primary {
     background-color: #3B73B9;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
     box-shadow: none;
   }
-  button.secondary {
+  .popup-box button.secondary {
     background-color: #fff;
     color: #3B73B9;
     font-weight: bold;
