@@ -17,23 +17,3 @@
     <div>
     </div>
 </div>
-
-
-<div id="main_popup_wrapper">
-    <header>
-        <h1 data-bind="text: title"></h1>
-        <!-- ko ifnot: modal -->
-        <h1 data-bind="click: hidePopup" class="x">X</h1>
-        <!-- /ko -->
-    </header>
-    <section data-bind="template: popupContent">
-    </section>
-</div>
-
-<div id="generic_popup">
-    <pre style="text-align:left" data-bind="text: data"></pre>
-</div>
-
-<div id="message_popup_template">
-    <span data-bind="text: message"></span>
-</div>
