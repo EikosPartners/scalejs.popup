@@ -1,6 +1,6 @@
 {
   "name": "scalejs.popup",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "",
   "authors": [
   ],
@@ -9,14 +9,14 @@
     "dist/scalejs.popup.js"
   ],
   "ignore": [
-    "*", 
+    "*",
     "!dist/*.js",
     "!dist/*.css"
   ],
   "dependencies": {
     "scalejs": "lisovin/scalejs",
     "knockout": "~3.3.0",
-    "scalejs.mvvm": "EikosPartners/scalejs.mvvm"  
+    "scalejs.mvvm": "EikosPartners/scalejs.mvvm"
   },
   "devDependencies": {
     "requirejs": "latest"
