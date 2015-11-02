@@ -20,6 +20,7 @@ define([
 
     function hidePopup () {
         popupVisible(false);
+        popupRegion(undefined);
     }
 
     function renderPopup (template) {
