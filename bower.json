@@ -2,8 +2,7 @@
   "name": "scalejs.popup",
   "version": "0.0.7",
   "homepage": "",
-  "authors": [
-  ],
+  "authors": [],
   "description": "",
   "main": [
     "dist/scalejs.popup.js"
@@ -21,6 +20,8 @@
   },
   "devDependencies": {
     "requirejs": "latest"
+  },
+  "resolutions": {
+    "knockout": "~3.3.0"
   }
 }
-

@@ -1,12 +1,12 @@
 <div id="popup_template">
     <div class="popup-container" id="popup-container" data-bind="css: { 'popup-hidden' : !popupVisible() }">
         <!-- ko if: modal -->
-            <div class="popup-background"></div>
+            <div data-bind="css: background "></div>
         <!-- /ko -->
         <!-- ko ifnot: modal -->
-            <div class="popup-background" data-bind="click: hidePopup"></div>
+            <div data-bind="css: background, click: hidePopup"></div>
         <!-- /ko -->
-        <div class="popup-box">
+        <div class="popup-box" data-bind="css: position"> 
         <!-- ko render: popupRegion -->
         <!-- /ko -->
         </div>
