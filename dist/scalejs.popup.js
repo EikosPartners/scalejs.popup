@@ -23,9 +23,9 @@ define('scalejs.popup',[
         popupRegion = observable(),
         modal = observable(),
         background = observable(),
-        postion = observable(),
+        position = observable(),
         viewModel,
-        config = module.config;
+        config = module.config();
 
     function hidePopup () {
         popupVisible(false);
@@ -33,7 +33,7 @@ define('scalejs.popup',[
         
         if (!config.doNotRender) {
             var parent = document.body;
-            var oldRoot = document.getElementById("popupRoot");
+            var oldRoot = document.getElementById('popupRoot');
             parent.removeChild(oldRoot);
         }
     }
@@ -57,10 +57,10 @@ define('scalejs.popup',[
         popupVisible(true);
         
         if (!config.doNotRender) {
-            if (document.getElementById("popupRoot") === null) {
-                var newRoot = document.createElement("span");
-                newRoot.setAttribute("id","popupRoot");
-                newRoot.setAttribute("data-bind","render: popupRoot");
+            if (document.getElementById('popupRoot') === null) {
+                var newRoot = document.createElement('span');
+                newRoot.setAttribute('id','popupRoot');
+                newRoot.setAttribute('data-bind','render: popupRoot');
                 if (document.body === undefined || document.body.children === undefined) {
                     return;
                 }
@@ -68,7 +68,7 @@ define('scalejs.popup',[
                 var node = parent.children[0];
                 parent.insertBefore(newRoot, node);
                 
-                ko.applyBindings(this, document.getElementById("popupRoot"));
+                ko.applyBindings(this, document.getElementById('popupRoot'));
             }
         }
     }
