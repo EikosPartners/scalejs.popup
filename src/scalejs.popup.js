@@ -11,16 +11,21 @@ define([
     var // imports
         template = core.mvvm.template,
         observable = ko.observable,
+        is = core.type.is,
         // variables
         popupRoot = observable(),
         popupVisible = observable(false),
         popupRegion = observable(),
         modal = observable(),
+        onHidePopup = observable(),
         viewModel;
 
     function hidePopup () {
         popupVisible(false);
         popupRegion(undefined);
+        if(is(onHidePopup(), 'function')) {
+            onHidePopup()();
+        }
     }
 
     function renderPopup (template) {
@@ -43,7 +48,9 @@ define([
     return {
         renderPopup: renderPopup,
         hidePopup: hidePopup,
-        popupRoot: popupRoot
+        popupRoot: popupRoot,
+        onHidePopup: onHidePopup
     }
 });
+
 
