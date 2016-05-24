@@ -1,6 +1,6 @@
 {
   "name": "scalejs.popup",
-  "version": "0.4.8",
+  "version": "0.5.0",
   "homepage": "",
   "authors": [
   ],
@@ -15,7 +15,7 @@
     "!dist/*.scss"
   ],
   "dependencies": {
-    "scalejs": "lisovin/scalejs",
+    "scalejs": "EikosPartners/scalejs#~0.5.1",
     "knockout": "~3.3.0",
     "scalejs.mvvm": "EikosPartners/scalejs.mvvm"
   },

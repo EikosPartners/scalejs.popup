@@ -1,5 +1,5 @@
 define([
-    'scalejs!core',
+    'scalejs.core',
     'knockout',
     'scalejs.mvvm.views!scalejs.popup/popup'
 ], function (
