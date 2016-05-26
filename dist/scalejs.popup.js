@@ -1,11 +1,10 @@
 
-define('text!scalejs.popup/popup.html',[],function () { return '<div id="popup_template">\r\n    <div class="popup-container" id="popup-container" data-bind="css: { \'popup-hidden\' : !popupVisible() }">\r\n        <!-- ko if: modal -->\r\n            <div class="popup-background"></div>\r\n        <!-- /ko -->\r\n        <!-- ko ifnot: modal -->\r\n            <div class="popup-background" data-bind="click: hidePopup"></div>\r\n        <!-- /ko -->\r\n        <div class="popup-box">\r\n        <!-- ko render: popupRegion -->\r\n        <!-- /ko -->\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id="blank_popup_template">\r\n    <div>\r\n    </div>\r\n</div>\r\n';});
-
+define('text!scalejs.popup/popup.html',[],function () { return '<div id="popup_template">\n    <div class="popup-container" id="popup-container" data-bind="css: { \'popup-hidden\' : !popupVisible() }">\n        <!-- ko if: modal -->\n            <div class="popup-background"></div>\n        <!-- /ko -->\n        <!-- ko ifnot: modal -->\n            <div class="popup-background" data-bind="click: hidePopup"></div>\n        <!-- /ko -->\n        <div class="popup-box">\n        <!-- ko render: popupRegion -->\n        <!-- /ko -->\n        </div>\n    </div>\n</div>\n\n<div id="blank_popup_template">\n    <div>\n    </div>\n</div>\n';});
 
 define('scalejs.popup',[
     'scalejs.core',
     'knockout',
-    'scalejs.mvvm.views!scalejs.popup/popup'
+    'html!scalejs.popup/popup.html'
 ], function (
     core,
     ko
