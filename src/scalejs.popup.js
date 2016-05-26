@@ -1,12 +1,16 @@
 define([
     'scalejs.core',
     'knockout',
-    'html!scalejs.popup/popup.html'
+    'text!scalejs.popup/popup.html',
+    'scalejs.mvvm'
 ], function (
     core,
-    ko
+    ko,
+    templates
 ) {
     'use strict';
+
+    core.mvvm.registerTemplates(templates);
 
     var // imports
         template = core.mvvm.template,

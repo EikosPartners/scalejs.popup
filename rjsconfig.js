@@ -8,8 +8,7 @@ var require = {
   },
   map: {
     '*': {
-      'scalejs.core': 'empty:',
-      html: 'text'
+      'scalejs.core': 'empty:'
     }
   },
   paths: {
