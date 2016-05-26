@@ -3,7 +3,7 @@ define('text!scalejs.popup/popup.html',[],function () { return '<div id="popup_t
 
 
 define('scalejs.popup',[
-    'scalejs!core',
+    'scalejs.core',
     'knockout',
     'scalejs.mvvm.views!scalejs.popup/popup'
 ], function (
