@@ -1,14 +1,8 @@
-define([
-    'scalejs.core',
-    'knockout',
-    'text!scalejs.popup/popup.html',
-    'scalejs.mvvm'
-], function (
-    core,
-    ko,
-    templates
-) {
-    'use strict';
+import core from 'scalejs.core';
+import ko from 'knockout';
+import templates from './views/popup.html';
+import 'scalejs.mvvm';
+    
 
     core.mvvm.registerTemplates(templates);
 
@@ -49,12 +43,12 @@ define([
     popupRegion(template('blank_popup_template'));
     popupRoot(template('popup_template', viewModel));
 
-    return {
+    export default {
         renderPopup: renderPopup,
         hidePopup: hidePopup,
         popupRoot: popupRoot,
         onHidePopup: onHidePopup
     }
-});
+
 
 
