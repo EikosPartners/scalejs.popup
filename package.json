@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir dist && npm run copy",
-    "copy": "copyup src/**/*.html src/**/*.css dist"
+    "copy": "copyup src/**/*.html src/**/*.css dist",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
