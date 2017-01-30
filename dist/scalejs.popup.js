@@ -41,12 +41,14 @@ function hidePopup() {
     if (is(onHidePopup(), 'function')) {
         onHidePopup()();
     }
+    document.querySelector('body').style['overflow-y'] = 'auto';
 }
 
 function renderPopup(template) {
     template.template.data.modal ? modal(true) : modal(false);
     popupRegion(template);
     popupVisible(true);
+    document.querySelector('body').style['overflow-y'] = 'hidden';
 }
 
 viewModel = {
