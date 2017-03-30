@@ -66,5 +66,6 @@ exports.default = {
     renderPopup: renderPopup,
     hidePopup: hidePopup,
     popupRoot: popupRoot,
-    onHidePopup: onHidePopup
+    onHidePopup: onHidePopup,
+    popupRegion: popupRegion
 };

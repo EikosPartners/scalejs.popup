@@ -49,7 +49,8 @@ import 'scalejs.mvvm';
         renderPopup: renderPopup,
         hidePopup: hidePopup,
         popupRoot: popupRoot,
-        onHidePopup: onHidePopup
+        onHidePopup: onHidePopup,
+        popupRegion: popupRegion
     }
 
 
