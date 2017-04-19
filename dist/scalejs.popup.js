@@ -33,6 +33,7 @@ popupRoot = observable(),
     popupRegion = observable(),
     modal = observable(),
     onHidePopup = observable(),
+    popupClasses = observable(),
     viewModel;
 
 function hidePopup() {
@@ -46,6 +47,7 @@ function hidePopup() {
 
 function renderPopup(template) {
     template.template.data.modal ? modal(true) : modal(false);
+    template.template.data.popupClasses ? popupClasses(template.template.data.popupClasses) : popupClasses(undefined);
     popupRegion(template);
     popupVisible(true);
     document.querySelector('body').style['overflow-y'] = 'hidden';
@@ -56,6 +58,7 @@ viewModel = {
     hidePopup: hidePopup,
     popupVisible: popupVisible,
     popupRegion: popupRegion,
+    popupClasses: popupClasses,
     modal: modal
 };
 

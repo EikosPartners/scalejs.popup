@@ -16,6 +16,7 @@ import 'scalejs.mvvm';
         popupRegion = observable(),
         modal = observable(),
         onHidePopup = observable(),
+        popupClasses = observable(),
         viewModel;
 
     function hidePopup() {
@@ -29,6 +30,7 @@ import 'scalejs.mvvm';
 
     function renderPopup(template) {
         template.template.data.modal ? modal(true) : modal(false);
+        template.template.data.popupClasses ? popupClasses(template.template.data.popupClasses) : popupClasses(undefined);
         popupRegion(template);
         popupVisible(true);
         document.querySelector('body').style['overflow-y'] = 'hidden';
@@ -39,6 +41,7 @@ import 'scalejs.mvvm';
         hidePopup: hidePopup,
         popupVisible: popupVisible,
         popupRegion: popupRegion,
+        popupClasses: popupClasses,
         modal: modal
     }
 
